@@ -1,0 +1,30 @@
+header {
+    background-color: red;
+}
+
+nav {
+    background-color: blue;
+}
+
+ul {
+    background-color: green;
+}
+
+li {
+    background-color: hotpink;
+}
+.top-index{
+    background-color: yellow;
+}
+.currencies{
+    background-color: wheat;
+}
+.stock-search{
+    background-color: aquamarine;
+}
+footer{
+    background-color: black;
+}
+body{
+    background-color: tomato;
+}
