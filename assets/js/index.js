@@ -2,7 +2,8 @@
 
 var select = document.querySelector(".select");
 var indexOptions = document.querySelector(".index-options")
-var pagecontentEL = document.querySelector("#popular-indices");
+var pickIndexEL = document.querySelector("#popular-indices");
+var tickerSelectEl = document.querySelector("#ticker-pick");
 // the code below will populate the ticker select based on choice from pick index select
 // populates option field in select element
 var populate = function(options) {
@@ -24,6 +25,10 @@ var populate = function(options) {
 	 console.log(targetChoice);
 	};
 
+    var tickerPickHandler = function(event) {
+     console.log(event.target.value);
+    };
+
 // poulates ticker select element
 var populateTicker = function (index) {
 	fetch("https://stock-market-data.p.rapidapi.com/market/index/" + index +"", {
@@ -44,4 +49,5 @@ var populateTicker = function (index) {
 };
 
 // change event for ticker functionality
-pagecontentEL.addEventListener("change" ,optionHandler)
+pickIndexEL.addEventListener("change" ,optionHandler)
+tickerSelectEl.addEventListener("change", tickerPickHandler)
