@@ -14,7 +14,8 @@ li {
     background-color: hotpink;
 }
 .top-index{
-    background-color: yellow;
+    background-color: black;
+    
 }
 .currencies{
     background-color: wheat;
@@ -28,3 +29,10 @@ footer{
 body{
     background-color: tomato;
 }
+
+    @media  screen and  (max-width: 748px) {
+        .iframe{
+            margin: auto;
+        }
+        
+    }
