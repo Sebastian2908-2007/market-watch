@@ -1,4 +1,4 @@
-
+var select = document.querySelector(".select");
 // div holding indice selection
 var pickIndexEL = document.querySelector("#popular-indices");
 // div holding dynamically generated tickers for a given indice
