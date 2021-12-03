@@ -12,6 +12,7 @@ var populate = function(options) {
 	for(i=0; i < options.length; i++) {
 		console.log(options[i]);
 		var option = document.createElement("option")
+        option.classList = "dropdown-item";
 		option.textContent = options[i];
 		option.setAttribute("value", options[i]);
 		select.appendChild(option);

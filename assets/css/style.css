@@ -29,6 +29,9 @@ footer{
 body{
     background-color: tomato;
 }
+input {
+    margin: auto;
+}
 
     @media  screen and  (max-width: 748px) {
         .iframe{
