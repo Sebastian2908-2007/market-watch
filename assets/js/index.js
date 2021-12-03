@@ -4,6 +4,43 @@ var pickIndexEL = document.querySelector("#popular-indices");
 // div holding dynamically generated tickers for a given indice
 var tickerSelectEl = document.querySelector("#ticker-pick");
 
+// poulates popular indice section with data
+var populateIndice = function(search) {
+    var financialData = search.financialData;
+
+    var title = document.querySelector("#results-title");
+    title.textContent = search.symbol;
+
+    var ebitdaMargins = document.querySelector("#results1");
+    ebitdaMargins.textContent = " ebitdaMargins:" + " " + financialData. ebitdaMargins.fmt;
+
+    var profitMargins = document.querySelector("#results2"); 
+    profitMargins.textContent =  "profitMargins" + " " + financialData.profitMargins.fmt;
+
+    var grossMargins = document.querySelector("#results3");
+    grossMargins.textContent = "grossMargins:" + " " + financialData.grossMargins.fmt;
+
+    var operatingCashflow = document.querySelector("#results4");
+    operatingCashflow.textContent = " operatingCashflow:" + " " + financialData.operatingCashflow.fmt;
+
+    var revenueGrowth = document.querySelector("#results5");
+    revenueGrowth.textContent = "revenueGrowth:" + " " + financialData.revenueGrowth.fmt;
+
+    var operatingMargins = document.querySelector("#results6");
+    operatingMargins.textContent = "operatingMargins:" + " " + financialData.operatingMargins.fmt;
+    
+    var grossProfits = document.querySelector("#results7");
+    grossProfits.textContent = "grossProfits:" + " " + financialData.grossProfits.fmt;
+
+    var currentPrice = document.querySelector("#results8");
+    currentPrice.textContent = "currentPrice:" + " " + "$" +financialData.currentPrice.fmt
+
+    var website = document.querySelector("#company-web");
+    website.textContent = search.summaryProfile.website;
+    website.setAttribute("href", search.summaryProfile.website);
+    
+};
+
 
 
 // the code below will populate the ticker select based on choice from pick index select
@@ -48,7 +85,7 @@ var populate = function(options) {
 .then(response => {
 	response.json().then(function(data) {
         // call funtion that prints data
-  console.log(data.financialData);
+       populateIndice(data);
     });
 })
 .catch(err => {
@@ -82,3 +119,4 @@ var populateTicker = function (index) {
 // change event for ticker functionality
 pickIndexEL.addEventListener("change" ,optionHandler)
 tickerSelectEl.addEventListener("change", tickerPickHandler)
+//stockSearch("ABC");
