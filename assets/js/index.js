@@ -47,6 +47,7 @@ var populate = function(options) {
 })
 .then(response => {
 	response.json().then(function(data) {
+        // call funtion that prints data
   console.log(data.financialData);
     });
 })

@@ -14,16 +14,16 @@
 <h1 class="has-text-centered">
     <a class="title" href="/">Market Watch</a>
 </h1>
-<nav class="nav" >
-  <ul class="level is-mobile" >
+<nav class="nav">
+  <ul class="level is-mobile is-flex is-flex-wrap-wrap " >
       <li class="level-item"><a class="navbar-item" href="#index"> Top Index</a></li>
       <li class="level-item"><a class="navbar-item" href="#search">Search a Stock</a></li>
-      <li class="level-item"><a class="navbar-item" href="#currency"> Top Index</a></li>
+      <li class="level-item"><a class="navbar-item" href="#indices"> Popular Indice</a></li>
   </ul>  
 </nav>
     </header>
 <section class="top-index section" id="index">
-    <h2 class="has-text-centered card-header-title">Top Index</h2> 
+    <h2 class="has-text-centered title">Top Index</h2> 
 <!--embed starts here index spelled wrong-->
 <div class="level ">
 
@@ -31,6 +31,7 @@
 </iframe>
 </div>
 <!--embed ends here-->
+
 <!--popular indces starts-->
 </section>
 <div class="level black">
@@ -39,7 +40,7 @@
  <div class="is-flex ">
      <div class="is-flex-direction-column">
   <div class=" level-item card-content is-flex-direction-column " id="popular-indices">
-    <h2 class="has-text-centered card-header-title  level-item" >Popular Indces</h2>
+    <h2 class="has-text-centered title  level-item" >Popular Indces</h2>
  <select class="index-options button ">
     <option class="dropdown-item" value="" disabled selected>Pick an index</option>
     <option class="dropdown-item" value="s-and-p-five-hundred">S&P 500</option>
@@ -64,7 +65,7 @@
  <!--popular indices ends-->
 
  <!--stock search section-->
- <section class="stock-search level-item" id="search">
+ <section class="stock-search level-item is-flex is-flex-wrap-wrap " id="search">
     <div class="card">
         <div class="card-image">
           <figure class="image is-960-400">
@@ -80,15 +81,48 @@
               </header>  
           </div>
       </div>
+      <!--search results begin-->
       <div class="results2 card" id="results2">
+        <header class="card-header">
+            <p class="card-header-title">
+              TSLA
+            </p>
+        </header>
+          <div class="card-content">
+            <div class="content">
+             Revenue Growth: 19.60%
+            </div>
+            <div class="content">
+             Debt to Equity: 1,335.61
+            </div>
+            <div class="content">
+             Price to Sales: 0.11
+            </div>
+            <div class="content">
+             Market Cap: 24.10b
+            </div>
+            <div class="content">
+            52weekhigh: 129.54
+            </div>
+            <div class="content">
+            52weeklow: 94.89
+            </div>
+          </div>
+          <footer class="card-footer">
+            <div class="card-footer-item">Open: 114.51</div>
+            <div class="card-footer-item">Day High: 116.53</div>
+            <div class="card-footer-item">Day Low: 113.68</div>
+            <div class="card-footer-item">prev/close: 114.08</div>
+          </footer>
+     </div>
+     <!--search results end-->
 
-    </div>
  </section>
  <!--stock search section ends-->
  </div>
  <!--footer starts-->
  <footer class="container is-fluid">
-    <h4 class="has-text-centered">Resources</h4>
+    <h4 class="has-text-centered title">Resources</h4>
     <ul class=" level is-mobile" >
         <li class="level-item"><a href="#index"> some link</a></li>
         <li class="level-item"><a href="#search">some link</a></li>
