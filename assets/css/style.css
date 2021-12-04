@@ -11,6 +11,9 @@
     padding: auto;
    
 }
+body {
+    background-color: rgb(4, 80, 55);
+}
 .black {
     color: black;
 }
@@ -30,11 +33,23 @@
     background-color:  rgb(4, 80, 55);   
     align-items: center;
 }
+.results {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.index-options {
+    margin-top: 25px;
+}
 input {
-    margin-top: 5px;
+    margin-top: 25px;
 }
 .main-footer {
     background-color: rgb(4, 80, 55); 
+    margin-top: 30px;
+    
+}
+.main-footer h4 {
+    margin-top: 10px;
 }
 
     @media  screen and  (max-width: 748px) {
