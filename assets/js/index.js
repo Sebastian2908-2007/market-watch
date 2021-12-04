@@ -280,4 +280,4 @@ tickerSelectEl.addEventListener("change", tickerPickHandler)
 // event listener for the search button
 button.addEventListener("click", searchBtnHandler);
 //stockSearch("ABC");
-//load();
+load();
