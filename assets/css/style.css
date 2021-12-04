@@ -53,7 +53,7 @@ input {
 }
 /*ticker tape widget begins*/
 .sc-ticker-tape {
-    width: 1000px;
+    width: 400px;
 }
 
 .sc-ticker-tape-item {
