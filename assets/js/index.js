@@ -6,10 +6,33 @@ var tickerSelectEl = document.querySelector("#ticker-pick");
 // search button
 var button = document.querySelector(".btn");
 
+// loads based on last search
+var load = function() {
+ var lastTask = localStorage.getItem("last search");
+
+ if(!lastTask) {
+     return false;
+ }
+ lastTask = JSON.parse(lastTask);
+ stockSearch(lastTask);
+}
+
+// save last value to localStorage
+var save = function(searchTerm) {
+    localStorage.clear();
+    localStorage.setItem("last search", JSON.stringify(searchTerm))
+};
+
 
 var searchBtnHandler = function() {
     var input = document.querySelector(".input")
-    stockSearch(input.value);
+    if(input.value === "") {
+        input.value = "Please enter a ticker";
+        return;
+    }
+    stockSearch(input.value.trim().toUpperCase());
+    input.value = "";
+   
 }
 
 // populates search
@@ -186,7 +209,7 @@ var populate = function(options) {
 		select.appendChild(option);
 	}
 	
-	}
+	 };
 
     // gets value of index select and passes to populateTicker();
 	var optionHandler = function(event) {
@@ -206,7 +229,8 @@ var populate = function(options) {
 
     // function that calls rapid api yahoo finance for stock info endpoint
     var stockSearch = function(stock) {
-        fetch("https://yh-finance.p.rapidapi.com/stock/v2/get-summary?symbol="+stock+"&region=US", {
+        save(stock);
+        fetch("https://yh-finance.p.rapidapi.com/stock/v2/get-summary?symbol=" + stock + "&region=US", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "yh-finance.p.rapidapi.com",
@@ -256,3 +280,4 @@ tickerSelectEl.addEventListener("change", tickerPickHandler)
 // event listener for the search button
 button.addEventListener("click", searchBtnHandler);
 //stockSearch("ABC");
+load();
