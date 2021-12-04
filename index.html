@@ -104,26 +104,23 @@
  <!--popular indices ends-->
 
  <!--stock search section-->
- <section class="stock-search  is-flex is-flex-direction-column card" id="search">
-    <div class="">
-        <div class="card-image">
-          <figure class="image is-960-400">
-            <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6063a818c5beaa25a4cc2f00%2FStock-market-graph-%2F960x0.jpg%3Ffit%3Dscale" alt="Placeholder image">
-          </figure>
-        </div>
-        <div class="card-content has-text-centered ">
+ <section class="stock-search  is-flex is-flex-direction-column " id="search">
+   <!--card begins-->
+    <div class="card">
             <header class="card-header">
                 <p class="card-header-title black ">
                  Search A Ticker
                 </p>
             </header> 
+            <div class="card-content has-text-centered  ">
                 <input class="input is-primary is-rounded is-focused" type="text" name="ticker-name" placeholder="Enter Ticker" />
-                <button class="button btn "type="submit">GO</button>
-               
+                <button class="button btn "type="submit">GO</button>     
           </div>
-      </div>
-      <!--search results2 begin-->
-      <div class="results2 card " id="results2">
+      
+      
+      <!--search results under search bar begin begin-->
+      
+      <div class="results2 card-content " id="results2">
         <header class="card-header">
             <p class="card-header-title black"  id="results2-title">
               Search a ticker to get started
@@ -156,11 +153,17 @@
             <div class="card-footer-item" id="results2-10">prev/close: </div>
           </footer>
      </div>
-     <!--search results2 end-->
-
+    </div>
+     <!--card ends-->
+     <!--search results under search input ends-->
  </section>
  <!--stock search section ends-->
  </div>
+ <div class="card-image">
+  <figure class="image is-960-400">
+    <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6063a818c5beaa25a4cc2f00%2FStock-market-graph-%2F960x0.jpg%3Ffit%3Dscale" alt="Placeholder image">
+  </figure>
+</div>
  <!--footer starts-->
  <footer class="container is-fluid main-footer">
     <h4 class="has-text-centered title black">Resources</h4>

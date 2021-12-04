@@ -30,7 +30,7 @@ body {
     background-color: rgb(4, 80, 55); 
 }
 .stock-search {
-    background-color:  rgb(4, 80, 55);   
+    background-color:  white;   
     align-items: center;
 }
 .results {
@@ -51,6 +51,8 @@ input {
 .main-footer h4 {
     margin-top: 10px;
 }
+
+
 /*ticker tape widget begins*/
 .sc-ticker-tape {
     width: 400px;
