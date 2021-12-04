@@ -1,7 +1,21 @@
-body {
-    background-image: url();
+.top-index {
+    background-image: url(https://www.jbs.cam.ac.uk/wp-content/uploads/2020/12/2020-brainfood-covid19-economic-impact-883x432-1.jpg);
     background-size:cover;
     background-position: 80%;
+}
+.card-header {
+    background-image: url(https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2018/09/02/USATODAY/usatsports/hot-tech-stocks_large.jpg?width=580&height=326&fit=crop&format=pjpg&auto=webp);
+    background-size:cover;
+    background-position: 80%;
+    height: 120px;
+    padding: auto;
+   
+}
+.black {
+    color: black;
+}
+.main-header {
+    background-color: rgb(4, 80, 55);
 }
 .btn {
     margin-top: 10px;
@@ -9,8 +23,18 @@ body {
 .results2{
     width: 412px;
 }
+.indice{
+    background-color: rgb(4, 80, 55); 
+}
+.stock-search {
+    background-color:  rgb(4, 80, 55);   
+    align-items: center;
+}
 input {
-    margin: auto;
+    margin-top: 5px;
+}
+.main-footer {
+    background-color: rgb(4, 80, 55); 
 }
 
     @media  screen and  (max-width: 748px) {
