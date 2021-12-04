@@ -1,4 +1,11 @@
-
+body {
+    background-image: url();
+    background-size:cover;
+    background-position: 80%;
+}
+.btn {
+    margin-top: 10px;
+}
 .results2{
     width: 412px;
 }

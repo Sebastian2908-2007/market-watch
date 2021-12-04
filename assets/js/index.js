@@ -3,8 +3,16 @@ var select = document.querySelector(".select");
 var pickIndexEL = document.querySelector("#popular-indices");
 // div holding dynamically generated tickers for a given indice
 var tickerSelectEl = document.querySelector("#ticker-pick");
+// search button
+var button = document.querySelector(".btn");
 
-// populates seaech
+
+var searchBtnHandler = function() {
+    var input = document.querySelector(".input")
+    stockSearch(input.value);
+}
+
+// populates search
 var populateSearch = function(search) {
     var financial = search.financialData;
     var details = search.summaryDetail;
@@ -245,4 +253,6 @@ var populateTicker = function (index) {
 // change event for ticker functionality
 pickIndexEL.addEventListener("change" ,optionHandler)
 tickerSelectEl.addEventListener("change", tickerPickHandler)
+// event listener for the search button
+button.addEventListener("click", searchBtnHandler);
 //stockSearch("ABC");
