@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>8Market8Watch8</title>
+</head>
+<body>
+
+    <header class="container is-fluid main-header">
+<h1 class="has-text-centered">
+    <a class="title black" href="/">Market Watch</a>
+</h1>
+<nav class="nav">
+  <ul class="level is-mobile is-flex is-flex-wrap-wrap " >
+      <li class="level-item"><a class="navbar-item black" href="#index"> Top Index</a></li>
+      <li class="level-item"><a class="navbar-item black" href="#search">Search a Stock</a></li>
+      <li class="level-item"><a class="navbar-item black" href="#indices"> Popular Indice</a></li>
+  </ul>  
+</nav>
+    </header>
+<section class="top-index section" id="index">
+    <h2 class="has-text-centered title black">Top Index</h2> 
+<!--embed starts here index spelled wrong-->
+<div class="level ">
+
+  <div class="level-item" id="sc-ticker-tape"></div>
+
+<!--<iframe class="level-item iframe" scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/market-overview/?locale=en#%7B%22colorTheme%22%3A%22light%22%2C%22dateRange%22%3A%2212M%22%2C%22showChart%22%3Atrue%2C%22largeChartUrl%22%3A%22%22%2C%22isTransparent%22%3Afalse%2C%22showSymbolLogo%22%3Atrue%2C%22showFloatingTooltip%22%3Afalse%2C%22width%22%3A%22400%22%2C%22height%22%3A%22660%22%2C%22plotLineColorGrowing%22%3A%22rgba(0%2C%20255%2C%200%2C%201)%22%2C%22plotLineColorFalling%22%3A%22rgba(255%2C%200%2C%200%2C%201)%22%2C%22gridLineColor%22%3A%22rgba(240%2C%20243%2C%20250%2C%200)%22%2C%22scaleFontColor%22%3A%22rgba(120%2C%20123%2C%20134%2C%201)%22%2C%22belowLineFillColorGrowing%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22belowLineFillColorFalling%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22belowLineFillColorGrowingBottom%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22belowLineFillColorFallingBottom%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22symbolActiveColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22tabs%22%3A%5B%7B%22title%22%3A%22Indices%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22d%22%3A%22US%20100%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ADJI%22%2C%22d%22%3A%22Dow%2030%22%7D%2C%7B%22s%22%3A%22INDEX%3ANKY%22%2C%22d%22%3A%22Nikkei%20225%22%7D%2C%7B%22s%22%3A%22INDEX%3ADEU40%22%2C%22d%22%3A%22DAX%20Index%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3AUKXGBP%22%2C%22d%22%3A%22UK%20100%22%7D%5D%2C%22originalTitle%22%3A%22Indices%22%7D%2C%7B%22title%22%3A%22Futures%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME_MINI%3AES1!%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22CME%3A6E1!%22%2C%22d%22%3A%22Euro%22%7D%2C%7B%22s%22%3A%22COMEX%3AGC1!%22%2C%22d%22%3A%22Gold%22%7D%2C%7B%22s%22%3A%22NYMEX%3ACL1!%22%2C%22d%22%3A%22Crude%20Oil%22%7D%2C%7B%22s%22%3A%22NYMEX%3ANG1!%22%2C%22d%22%3A%22Natural%20Gas%22%7D%2C%7B%22s%22%3A%22CBOT%3AZC1!%22%2C%22d%22%3A%22Corn%22%7D%5D%2C%22originalTitle%22%3A%22Futures%22%7D%2C%7B%22title%22%3A%22Bonds%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME%3AGE1!%22%2C%22d%22%3A%22Eurodollar%22%7D%2C%7B%22s%22%3A%22CBOT%3AZB1!%22%2C%22d%22%3A%22T-Bond%22%7D%2C%7B%22s%22%3A%22CBOT%3AUB1!%22%2C%22d%22%3A%22Ultra%20T-Bond%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBL1!%22%2C%22d%22%3A%22Euro%20Bund%22%7D%2C%7B%22s%22%3A%22EUREX%3AFBTP1!%22%2C%22d%22%3A%22Euro%20BTP%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBM1!%22%2C%22d%22%3A%22Euro%20BOBL%22%7D%5D%2C%22originalTitle%22%3A%22Bonds%22%7D%2C%7B%22title%22%3A%22Forex%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22FX%3AEURUSD%22%7D%2C%7B%22s%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCHF%22%7D%2C%7B%22s%22%3A%22FX%3AAUDUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCAD%22%7D%5D%2C%22originalTitle%22%3A%22Forex%22%7D%5D%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22market-overview%22%7D"
+ style="box-sizing: border-box; height: calc(628px); width: 40%;">
+  </iframe>-->
+  
+</div>
+<!--embed ends here-->
+
+<!--popular indces starts-->
+</section>
+<div class="  is-flex is-flex-direction-column black">
+<section class="indice level-item card " id="indices">
+    
+ <div class="is-flex ">
+     <div class="is-flex-direction-column">
+  <div class=" level-item card-content is-flex-direction-column " id="popular-indices">
+    <h2 class="has-text-centered title  level-item black indice-title" >Popular Indces</h2>
+ <select class="index-options button ">
+    <option class="dropdown-item" value="" disabled selected>Pick an index</option>
+    <option class="dropdown-item" value="s-and-p-five-hundred">S&P 500</option>
+    <option class="dropdown-item"  value="nasdaq-one-hundred">Nasdaq 100</option>
+    <option class="dropdown-item"  value="dax-thirty">Dax 30</option>
+    <option class="dropdown-item" value="s-and-p-one-hundred">S&P 100</option>
+    <option class="dropdown-item" value="s-and-p-four-hundred">S&P 400</option>
+ </select>
+  </div>
+ <div class="level-item" id="ticker-pick"> 
+   <select class="select button">
+      <option class="dropdown-item"value="" disabled selected>Pick an Ticker</option>
+   </select>
+ </div>
+ 
+ <!--search results begin-->
+ <div class="results card" id="results">
+    <header class="card-header pick-ticker">
+        <p class="card-header-title black " id="results-title">
+        Pick a ticker to get started
+        </p>
+    </header>
+      <div class="card-content" >
+        <div class="content" id="results1">
+           
+        </div>
+        <div class="content" id="results2" >
+             
+        </div>
+        <div class="content" id="results3">
+           
+        </div>
+        <div class="content" id="results4" >
+             
+        </div>
+        <div class="content" id="results5">
+             
+        </div>
+        <div class="content" id="results6">
+            
+        </div>
+        <div class="content" id="results7">
+            
+        </div>
+        <div class="content" id="results8">
+             
+        </div>
+      </div>
+      <footer class="card-footer">
+      <a class="black" id="company-web"></a>
+      </footer>
+ </div>
+     </div>
+</div>
+ </section>
+ <!--search results end-->
+ <!--popular indices ends-->
+
+ <!--stock search section-->
+ <section class="stock-search  is-flex is-flex-direction-column " id="search">
+   <!--card begins-->
+    <div class="card">
+            <header class="card-header  search-ticker">
+                <p class="card-header-title black search-ticker">
+                 Search A Ticker
+                </p>
+            </header> 
+            <div class="card-content has-text-centered  ">
+                <input class="input is-primary is-rounded is-focused" type="text" name="ticker-name" placeholder="Enter Ticker" />
+                <button class="button btn "type="submit">GO</button>     
+          </div>
+      
+      
+      <!--search results under search bar begin begin-->
+      
+      <div class="results2 card-content " id="results2">
+        <header class="card-header search-tgs ">
+            <p class="card-header-title black "  id="results2-title">
+              Search a ticker to get started
+            </p>
+        </header>
+          <div class="card-content" >
+            <div class="content"  id="results2-1">
+            
+            </div>
+            <div class="content"  id="results2-2">
+            
+            </div>
+            <div class="content"  id="results2-3">
+              
+            </div>
+            <div class="content"  id="results2-4">
+             
+            </div>
+            <div class="content"  id="results2-5">
+             
+            </div>
+            <div class="content" id="results2-6" >
+             
+            </div>
+          </div>
+          <footer class="card-footer">
+            <div class="card-footer-item" id="results2-7"> </div>
+            <div class="card-footer-item" id="results2-8"> </div>
+            <div class="card-footer-item" id="results2-9"></div>
+            <div class="card-footer-item" id="results2-10"> </div>
+          </footer>
+     </div>
+    </div>
+     <!--card ends-->
+     <!--search results under search input ends-->
+ </section>
+ <!--stock search section ends-->
+ </div>
+ <div class="card-image " id="img">
+  <figure class="image is-960-400 ">
+    <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6063a818c5beaa25a4cc2f00%2FStock-market-graph-%2F960x0.jpg%3Ffit%3Dscale" alt="Placeholder image">
+  </figure>
+</div>
+ <!--footer starts-->
+ <footer class="container is-fluid main-footer">
+    <h4 class="has-text-centered title black">Resources</h4>
+    <ul class=" level is-mobile" >
+        <li class="level-item"><a class="black" href="#index"> some link</a></li>
+        <li class="level-item"><a class="black" href="#search">some link</a></li>
+        <li class="level-item"><a class="black" href="#currency"> some link</a></li>
+    </ul>  
+   
+</footer>
+<!--footer ends-->
+
+
+<script src="./assets/js/index.js"></script>
+<script src="https://softcapital.com/widget/widget.js"></script>
+<script>
+ createSoftCapitalWidget("TickerTape", "sc-ticker-tape", {
+      symbols:"MSFT,FB,AA,INTC,TSLA",
+      rows:1,logo:true,speed:5,mode:"chain",imgHeight:32
+}); 
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR52QrTIjmWwjPn3HuIetH6oK1ci6B2r6I5A&usqp=CAU" -->
+
+<!-- <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/market-overview/?locale=en#%7B%22colorTheme%22%3A%22light%22%2C%22dateRange%22%3A%2212M%22%2C%22showChart%22%3Atrue%2C%22largeChartUrl%22%3A%22%22%2C%22isTransparent%22%3Afalse%2C%22showSymbolLogo%22%3Atrue%2C%22showFloatingTooltip%22%3Afalse%2C%22width%22%3A%22400%22%2C%22height%22%3A%22660%22%2C%22plotLineColorGrowing%22%3A%22rgba(0%2C%20255%2C%200%2C%201)%22%2C%22plotLineColorFalling%22%3A%22rgba(255%2C%200%2C%200%2C%201)%22%2C%22gridLineColor%22%3A%22rgba(240%2C%20243%2C%20250%2C%200)%22%2C%22scaleFontColor%22%3A%22rgba(120%2C%20123%2C%20134%2C%201)%22%2C%22belowLineFillColorGrowing%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22belowLineFillColorFalling%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22belowLineFillColorGrowingBottom%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22belowLineFillColorFallingBottom%22%3A%22rgba(41%2C%2098%2C%20255%2C%200)%22%2C%22symbolActiveColor%22%3A%22rgba(41%2C%2098%2C%20255%2C%200.12)%22%2C%22tabs%22%3A%5B%7B%22title%22%3A%22Indices%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22d%22%3A%22US%20100%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ADJI%22%2C%22d%22%3A%22Dow%2030%22%7D%2C%7B%22s%22%3A%22INDEX%3ANKY%22%2C%22d%22%3A%22Nikkei%20225%22%7D%2C%7B%22s%22%3A%22INDEX%3ADEU40%22%2C%22d%22%3A%22DAX%20Index%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3AUKXGBP%22%2C%22d%22%3A%22UK%20100%22%7D%5D%2C%22originalTitle%22%3A%22Indices%22%7D%2C%7B%22title%22%3A%22Futures%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME_MINI%3AES1!%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22CME%3A6E1!%22%2C%22d%22%3A%22Euro%22%7D%2C%7B%22s%22%3A%22COMEX%3AGC1!%22%2C%22d%22%3A%22Gold%22%7D%2C%7B%22s%22%3A%22NYMEX%3ACL1!%22%2C%22d%22%3A%22Crude%20Oil%22%7D%2C%7B%22s%22%3A%22NYMEX%3ANG1!%22%2C%22d%22%3A%22Natural%20Gas%22%7D%2C%7B%22s%22%3A%22CBOT%3AZC1!%22%2C%22d%22%3A%22Corn%22%7D%5D%2C%22originalTitle%22%3A%22Futures%22%7D%2C%7B%22title%22%3A%22Bonds%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22CME%3AGE1!%22%2C%22d%22%3A%22Eurodollar%22%7D%2C%7B%22s%22%3A%22CBOT%3AZB1!%22%2C%22d%22%3A%22T-Bond%22%7D%2C%7B%22s%22%3A%22CBOT%3AUB1!%22%2C%22d%22%3A%22Ultra%20T-Bond%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBL1!%22%2C%22d%22%3A%22Euro%20Bund%22%7D%2C%7B%22s%22%3A%22EUREX%3AFBTP1!%22%2C%22d%22%3A%22Euro%20BTP%22%7D%2C%7B%22s%22%3A%22EUREX%3AFGBM1!%22%2C%22d%22%3A%22Euro%20BOBL%22%7D%5D%2C%22originalTitle%22%3A%22Bonds%22%7D%2C%7B%22title%22%3A%22Forex%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22FX%3AEURUSD%22%7D%2C%7B%22s%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCHF%22%7D%2C%7B%22s%22%3A%22FX%3AAUDUSD%22%7D%2C%7B%22s%22%3A%22FX%3AUSDCAD%22%7D%5D%2C%22originalTitle%22%3A%22Forex%22%7D%5D%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22market-overview%22%7D" style="box-sizing: border-box; height: calc(628px); width: 100%;">
+</iframe>-->

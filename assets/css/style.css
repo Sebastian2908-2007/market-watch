@@ -1,0 +1,245 @@
+.top-index {
+    background-image: url(https://www.jbs.cam.ac.uk/wp-content/uploads/2020/12/2020-brainfood-covid19-economic-impact-883x432-1.jpg);
+    background-size:cover;
+    background-position: 80%;
+}
+.pick-ticker {
+    background-image: url(https://www.gannett-cdn.com/-mm-/3b8b0abcb585d9841e5193c3d072eed1e5ce62bc/c=0-30-580-356/local/-/media/2018/09/02/USATODAY/usatsports/hot-tech-stocks_large.jpg?width=580&height=326&fit=crop&format=pjpg&auto=webp);
+    background-size:cover;
+    background-position: 80%;
+    height: 120px;
+    padding: auto;
+   
+}
+
+.search-ticker {
+    background-image: url(https://miro.medium.com/max/4096/1*WtZDnrVjk4sPoNc4Br1Hvw.jpeg);
+    background-size:cover;
+    background-position: 80%;
+    height: 120px;
+    padding: auto;
+   
+}
+
+.search-tgs {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgi7BftWaipom0XsgjwdkJ9bZQs0l-8PlsqfBDYYsRx0g4rS9n--aCdJGH10LdcbfEmUY&usqp=CAU);
+  background-size:cover;
+  background-position: 80%;
+  height: 120px;
+  padding: auto;
+}
+
+
+
+body {
+    background-color: rgb(4, 80, 55);
+}
+.black {
+    color: white;
+    text-shadow: 0 0 10px rgba(13, 236, 199, 0.473);
+}
+.main-header {
+    background-color: rgb(4, 80, 55);
+}
+.btn {
+    margin-top: 10px;
+}
+.results2{
+    width: 412px;
+}
+.indice{
+    background-color: rgb(4, 80, 55); 
+}
+.stock-search {
+    background-color:  white;   
+    align-items: center;
+}
+.results {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.index-options {
+    margin-top: 25px;
+}
+input {
+    margin-top: 25px;
+}
+.main-footer {
+    background-color: rgb(4, 80, 55); 
+    margin-top: 30px;
+    
+}
+.main-footer h4 {
+    margin-top: 10px;
+}
+
+
+/*ticker tape widget begins*/
+.sc-ticker-tape {
+    width: 400px;
+}
+
+.sc-ticker-tape-item {
+    padding: 4px 15px;
+}
+
+.sc-ticker-tape {
+    background: linear-gradient(
+          -45deg,
+          rgba(30, 87, 153, 0.3),
+          rgba(220, 10, 10, 0.3),
+          rgba(50, 150, 20, 0.3),
+          rgba(25, 170, 222, 0.3)
+        );
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+/*ticker tape widget ends*/
+
+/*media queries begin*/
+@media (max-width: 400px) {
+    .sc-ticker-tape {
+        width: 320px;
+    }
+    #results2  {
+        width: 320px;
+    }
+ 
+
+  .results {
+      width: 320px;
+  }
+ 
+  
+ 
+    
+       
+}
+   
+
+    @media (min-width: 548px) {
+        .sc-ticker-tape {
+            width: 540px;
+        }
+        #results2  {
+            width: 320px;
+        }
+     
+    
+      .results {
+          width: 320px;
+      }
+        }
+        
+        /* Small devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .sc-ticker-tape {
+                width: 740px;
+            }
+            #results2  {
+                width: 700px;
+            }
+         
+        
+          .results {
+              width: 700px;
+          }
+            }
+         
+        
+        /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .sc-ticker-tape {
+                width: 970px;
+            }
+            #results2  {
+                width: 900px;
+            }
+         
+        
+          .results {
+              width: 900px;
+          }  
+          
+          .pick-ticker {
+           
+            background-size:contain;
+           
+           
+        }
+        
+        .search-ticker {
+            
+            background-size:contain;
+            
+           
+        }
+        
+        .search-tgs {
+       
+          background-size:contain;
+       
+        }
+            
+          }
+        
+        /* Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+            .sc-ticker-tape {
+                width: 1100px;
+            }
+            #results2  {
+                width: 1050px;
+            }
+         
+        
+          .results {
+              width: 1050px;
+          }
+           
+         }
+    /*media queries end*/
