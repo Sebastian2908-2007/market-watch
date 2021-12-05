@@ -5,6 +5,8 @@ var pickIndexEL = document.querySelector("#popular-indices");
 var tickerSelectEl = document.querySelector("#ticker-pick");
 // search button
 var button = document.querySelector(".btn");
+// input field
+var inputField = document.querySelector(".input");
 
 // loads based on last search
 var load = function() {
@@ -279,5 +281,10 @@ pickIndexEL.addEventListener("change" ,optionHandler)
 tickerSelectEl.addEventListener("change", tickerPickHandler)
 // event listener for the search button
 button.addEventListener("click", searchBtnHandler);
-//stockSearch("ABC");
+inputField.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        searchBtnHandler();
+    }
+});
+
 load();
