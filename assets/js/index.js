@@ -47,70 +47,70 @@ var populateSearch = function(search) {
     returnOnAssets.textContent = "returnOnAssets:" + " " + financial.returnOnAssets.fmt;
 
     if(financial.returnOnAssets.fmt === undefined) {
-        returnOnAssets.textContent = "returnOnAssets: n/a"
+        returnOnAssets.textContent = "";
     }
 
     var debtToEquity = document.querySelector("#results2-2");
     debtToEquity.textContent = "debtToEquity:" + " " + financial.debtToEquity.fmt;
 
     if( financial.debtToEquity.fmt === undefined) {
-        debtToEquity.textContent = "debtToEquity: n/a"
+        debtToEquity.textContent = "";
     }
 
     var priceToSales = document.querySelector("#results2-3");
     priceToSales.textContent = "priceToSalesTrailing12Months:" + " " + details.priceToSalesTrailing12Months.fmt;
 
     if(details.priceToSalesTrailing12Months.fmt === undefined) {
-        priceToSales.textContent = "priceToSalesTrailing12Months: n/a"
+        priceToSales.textContent = "";
     }
 
     var marketCap = document.querySelector("#results2-4");
     marketCap.textContent = "marketCap:" + " " + details.marketCap.fmt;
 
     if( details.marketCap.fmt === undefined) {
-        marketCap.textContent = "marketCap: n/a"
+        marketCap.textContent = "";
     }
 
     var fiftyTwoWeekHigh = document.querySelector("#results2-5");
     fiftyTwoWeekHigh.textContent = "fiftyTwoWeekHigh:" + " " + details.fiftyTwoWeekHigh.fmt;
 
     if( details.fiftyTwoWeekHigh.fmt === undefined) {
-        fiftyTwoWeekHigh.textContent = "fiftyTwoWeekHigh: n/a"
+        fiftyTwoWeekHigh.textContent = "";
     }
 
     var fiftyTwoWeekLow = document.querySelector("#results2-6");
     fiftyTwoWeekLow.textContent = "fiftyTwoWeekLow:" + " " + details.fiftyTwoWeekLow.fmt;
 
     if(details.fiftyTwoWeekLow.fmt === undefined) {
-        fiftyTwoWeekLow.textContent = "fiftyTwoWeekLow: n/a"
+        fiftyTwoWeekLow.textContent = "";
     }
 
     var open = document.querySelector("#results2-7");
     open.textContent = "open:" + " " + details.open.fmt;
 
     if(details.open.fmt === undefined) {
-        open.textContent = "open: n/a"
+        open.textContent = "";
     }
 
     var regularMarketDayHigh = document.querySelector("#results2-8");
     regularMarketDayHigh.textContent = "Day High:" + " " + details.regularMarketDayHigh.fmt;
 
     if( details.regularMarketDayHigh.fmt === undefined) {
-        regularMarketDayHigh.textContent = "Day High: n/a"
+        regularMarketDayHigh.textContent = "";
     }
 
     var regularMarketDayLow = document.querySelector("#results2-9");
     regularMarketDayLow.textContent = "Day Low:" + " " + details.regularMarketDayLow.fmt;
 
     if(details.regularMarketDayLow.fmt === undefined) {
-        regularMarketDayLow.textContent = "Day Low: n/a"
+        regularMarketDayLow.textContent = "";
     }
 
     var regularMarketPreviousClose = document.querySelector("#results2-10");
     regularMarketPreviousClose.textContent = "prev/close:" + " " + details.regularMarketPreviousClose.fmt;
 
     if(details.regularMarketPreviousClose.fmt === undefined) {
-        regularMarketPreviousClose.textContent = "prev/close: n/a"
+        regularMarketPreviousClose.textContent = "";
     }
 
 
@@ -131,56 +131,56 @@ var populateIndice = function(search) {
     ebitdaMargins.textContent = " ebitdaMargins:" + " " + financialData.ebitdaMargins.fmt;
 
     if( financialData.ebitdaMargins.fmt === undefined) {
-        ebitdaMargins.textContent = "ebitdaMargins: n/a"
+        ebitdaMargins.textContent = "";
     }
 
     var profitMargins = document.querySelector("#results2"); 
     profitMargins.textContent =  "profitMargins" + " " + financialData.profitMargins.fmt;
     
     if(financialData.profitMargins.fmt === undefined) {
-        profitMargins.textContent = "profitMargins: n/a"
+        profitMargins.textContent = "";
     }
 
     var grossMargins = document.querySelector("#results3");
     grossMargins.textContent = "grossMargins:" + " " + financialData.grossMargins.fmt;
 
     if(financialData.grossMargins.fmt === undefined){
-        grossMargins.textContent = "grossMargins: n/a"
+        grossMargins.textContent = "";
     }
 
     var operatingCashflow = document.querySelector("#results4");
     operatingCashflow.textContent = " operatingCashflow:" + " " + financialData.operatingCashflow.fmt;
 
     if(financialData.operatingCashflow.fmt === undefined) {
-        operatingCashflow.textContent = " operatingCashflow: n/a"
+        operatingCashflow.textContent = "";
     }
 
     var revenueGrowth = document.querySelector("#results5");
     revenueGrowth.textContent = "revenueGrowth:" + " " + financialData.revenueGrowth.fmt;
 
     if(financialData.revenueGrowth.fmt === undefined) {
-        revenueGrowth.textContent = "revenueGrowth: n/a"
+        revenueGrowth.textContent = "";
     }
 
     var operatingMargins = document.querySelector("#results6");
     operatingMargins.textContent = "operatingMargins:" + " " + financialData.operatingMargins.fmt;
 
     if( financialData.operatingMargins.fmt === undefined) {
-        operatingMargins.textContent = "operatingMargins: n/a"
+        operatingMargins.textContent = "";
     }
     
     var grossProfits = document.querySelector("#results7");
     grossProfits.textContent = "grossProfits:" + " " + financialData.grossProfits.fmt;
 
     if(financialData.grossProfits.fmt === undefined) {
-        grossProfits.textContent = "grossProfits: n/a"
+        grossProfits.textContent = "";
     }
 
     var currentPrice = document.querySelector("#results8");
     currentPrice.textContent = "currentPrice:" + " " + "$" +financialData.currentPrice.fmt
 
     if(financialData.currentPrice.fmt === undefined) {
-        currentPrice.textContent = "currentPrice: n/a"
+        currentPrice.textContent = "";
     }
 
     var website = document.querySelector("#company-web");
@@ -188,7 +188,7 @@ var populateIndice = function(search) {
     website.setAttribute("href", search.summaryProfile.website);
 
     if(search.summaryProfile.website === undefined) {
-        website.textContent = "company website not available"
+        website.textContent = "";
     }
     
 };
@@ -280,4 +280,4 @@ tickerSelectEl.addEventListener("change", tickerPickHandler)
 // event listener for the search button
 button.addEventListener("click", searchBtnHandler);
 //stockSearch("ABC");
-//load();
+load();
