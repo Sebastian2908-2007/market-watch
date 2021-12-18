@@ -5,7 +5,7 @@
       
 
 # Market Watch
- https://github.com/Sebastian2908-2007/Market Watch
+ https://github.com/Sebastian2908-2007/market-Watch
  ## Description
 
 This is an app to search stock info by ticker.
